@@ -18,7 +18,7 @@
                 </div>
                     <div class="umMeio">
                         <p class="labelFormCadastro">Número</p> 
-                        <input type="text" value="<?php if(isset($aluno['numero'])){ echo $aluno['numero']; } ?>" class="inputCadastro" placeholder="Número Residencial" name="numero" id="numero">
+                        <input type="number" value="<?php if(isset($aluno['numero'])){ echo $aluno['numero']; } ?>" class="inputCadastro" placeholder="Número Residencial" name="numero" id="numero">
                     </div>
                 </div>
                 <div class="itemForm">
