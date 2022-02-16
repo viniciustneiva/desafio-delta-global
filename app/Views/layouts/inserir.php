@@ -34,7 +34,7 @@
                 
                 <div class="itemForm">
                     <p class="labelFormCadastro">Foto</p> 
-                    <?php echo form_upload('foto','',['class' => 'inputCadastro', 'id' => 'foto'])?>                
+                    <?php echo form_upload('foto','',['class' => 'inputCadastro', 'id' => 'foto', 'accept' => "image/jpg, image/jpeg"])?>                
                 </div>
                 <div class="itemForm">
                     <?php 
