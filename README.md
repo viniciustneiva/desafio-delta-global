@@ -16,7 +16,7 @@ Por fim, para iniciarmos execute os comandos em ordem:
 php spark migrate
 php spark db:seed AlunosSeeder
 ```
-Inicie a aplicação
+# Iniciando a aplicação
 
 ###  Windows
 
