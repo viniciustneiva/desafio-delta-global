@@ -1,5 +1,5 @@
 # desafio-delta-global
-Desafio da Delta Global
+Desafio da Delta Global utilizando CodeIgniter 4 via XAMPP.
 
 ## Instalação
 
