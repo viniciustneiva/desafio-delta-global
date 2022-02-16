@@ -10,6 +10,13 @@ composer install
 composer update
 ```
 Após estes comando, configure um banco de dados no arquivo .env
+    
+Por fim, para iniciarmos execute os comandos em ordem:
+```
+php spark migrate
+php spark db:seed AlunosSeeder
+```
+Inicie a aplicação
 
 ###  Windows
 
@@ -23,14 +30,6 @@ Para o Ubuntu é necessário configurar manualmente o ambiente e na pasta raiz d
 ```
 php spark serve
 ```
-
-    
-Por fim, para iniciarmos execute os comandos em ordem:
-```
-php spark migrate
-php spark db:seed AlunosSeeder
-```
-Inicie a aplicação
     
 Acesse em http://localhost
     
