@@ -1,6 +1,7 @@
 <?php
     $tituloPagina = 'Alunos';
-    include('includes/header.php');
+    $this->extend('includes/layouts');
+    $this->section('content');
 ?>
 
 <body>
@@ -19,13 +20,13 @@
                 <?php foreach($alunos as $aluno): ?>
                     <tr>    
                         <td><?php echo $aluno['idAluno'] ?></td>
-                        <td><?php echo $aluno['foto'] ?></td>
+                        <td><?php if(!empty($aluno["foto"])){ echo '<img class="avatar" src="../../assets/uploads/'.$aluno["foto"].'">'; }  ?></td>
                         <td><?php echo $aluno['nome'] ?></td>
                         <td><?php echo "".$aluno['logradouro'].", ".$aluno['numero'].", ".$aluno['bairro'].", ".$aluno['cidade'].""; ?></td>
                         <td>
-                            <?php echo anchor('alunos/edit/'.$aluno['idAluno'], 'Editar') ?>
+                            <?php echo anchor('aluno/edit/'.$aluno['idAluno'], 'Editar') ?>
                             |
-                            <?php echo anchor('alunos/delete/'.$aluno['idAluno'], 'Excluir', ['onclick' => 'return confirma()']) ?>
+                            <?php echo anchor('aluno/delete/'.$aluno['idAluno'], 'Excluir', ['onclick' => 'return confirma()']) ?>
                         </td> 
                     </tr>
                 <?php endforeach ?>
@@ -37,5 +38,5 @@
 </body>  
 
 <?php
-    include('includes/footer.php');
+    $this->endSection();
 ?>

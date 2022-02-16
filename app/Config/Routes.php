@@ -31,12 +31,12 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-$routes->get('alunos', 'Aluno::index');
-$routes->add('alunos/create', 'Aluno::create');
-$routes->add('alunos/edit/(:num)', 'Aluno::edit/$1');
-$routes->add('alunos/delete/(:num)', 'Aluno::delete/$1');
-$routes->add('alunos/avatar/(:num)', 'Aluno::upload/$1');
+
+$routes->get('/', 'Aluno::index');
+$routes->add('aluno/create', 'Aluno::create');
+$routes->add('aluno/edit/(:num)', 'Aluno::edit/$1');
+$routes->add('aluno/delete/(:num)', 'Aluno::delete/$1');
+
 
 /*
  * --------------------------------------------------------------------

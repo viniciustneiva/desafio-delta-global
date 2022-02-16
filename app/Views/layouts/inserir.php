@@ -1,6 +1,7 @@
 <?php
     $tituloPagina = 'Cadastrar Aluno';
-    include('includes/header.php');
+    $this->extend('includes/layouts');
+    $this->section('content');
 ?>
 <body>
     <div class="container mt-5">
@@ -37,9 +38,9 @@
                 </div>
                 <div class="itemForm">
                     <?php 
-                        if(isset($aluno['foto'])){ 
+                        if(!empty($aluno['foto'])){ 
                             echo '
-                            <img class="thumbnailFoto" src="assets/uploads/'.$aluno["foto"].'">'; 
+                            <img class="thumbnailFoto" src="../../assets/uploads/'.$aluno["foto"].'">'; 
                         }
                     ?>
                 </div>
@@ -49,9 +50,11 @@
             </div>
         
              <?php echo form_close(); ?>
+             <a href="/">Voltar ao início</a>
     </div>
+
 </body>
 
 <?php
-    include('includes/footer.php');
+    $this->endSection();
 ?>

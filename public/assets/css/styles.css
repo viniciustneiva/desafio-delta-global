@@ -75,6 +75,10 @@
     padding: 14px 0 14px 0;
 }
 
+.btnSubmit:hover{
+    opacity: 0.8;
+}
+
 .umMeio{
     width: 48%;
     display: inline-block;
@@ -102,6 +106,16 @@
 .corrigeBotao {
     display: block;
     margin: 45px auto;
+}
+
+.thumbnailFoto{
+    border: 1px solid;
+    padding: 5%;
+    margin-top: 30px;
+}
+
+.avatar{
+    max-width: 50px;
 }
 
 @media (max-width: 1000px){

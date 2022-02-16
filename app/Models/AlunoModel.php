@@ -13,7 +13,9 @@ class AlunoModel extends Model
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
-    protected $protectFields    = true;
+    protected $protectFields    = false;
+    
+    //  itens que podem ser manipulados em 'alunos'
     protected $allowedFields    = [
         'idAluno',
         'nome',
