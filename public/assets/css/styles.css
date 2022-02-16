@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+   font-family: 'Roboto', sans-serif; 
+}
+
+.wrapper{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    min-height: 90vh;
+    position: relative;
+}
+
+.cartao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.itemBox {
+    flex: 0 0 50%;
+    height: fit-content;
+    text-align: center;
+    margin: 0px 20px;
+}
+
+.tituloCard {
+    font-weight: bold;
+    font-size: 36px;
+    color: #5b59e7;
+}
+
+.textoCard {
+    font-weight: normal;
+    font-size: 20px;
+    color: #000;
+}
+
+.wrapperForm {
+    box-shadow: 0px 0px 2px black;
+    border-radius: 4px;
+    padding: 5%;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+#inputLogin, #inputSenha {
+    margin: 10px 0 25px 0;
+    padding: 10px 6px 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    outline: 0;
+    border: 2px solid #5b59e7;
+}
+
+.btnSubmit {
+    width: 50%;
+    border: 0;
+    background-color: #5b59e7;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    padding: 14px 0 14px 0;
+}
+
+.umMeio{
+    width: 48%;
+    display: inline-block;
+}
+
+.labelFormCadastro{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.inputCadastro {
+    width: 93%;
+    border: 3px solid #5b59e7;
+    border-radius: 14px;
+    padding: 10px 0 10px 24px;
+    font-size: 20px;
+}
+
+.formCriacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.corrigeBotao {
+    display: block;
+    margin: 45px auto;
+}
+
+@media (max-width: 1000px){
+    .wrapper {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px){
+    .cartao {
+        flex-direction: column;
+    }
+
+    .wrapper {
+        min-height: 70vh;
+    }
+}
