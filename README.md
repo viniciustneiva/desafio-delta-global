@@ -10,6 +10,20 @@ composer install
 composer update
 ```
 Após estes comando, configure um banco de dados no arquivo .env
+
+###  Windows
+
+Para Windows o aplicativo XAMPP é uma alternativa extremamente fácil e de configuração rápida, mas para o bom funcionamento é importante habilitar a extensão 'intl', localizada na pasta C:/xampp/php/php.ini ou pelo próprio aplicativo é possivel habilitá-la.
+
+Após configurar totalmente, é só apertar o 'Start' para o Apache e o MySQL.
+
+### Linux
+
+Para o Ubuntu é necessário configurar manualmente o ambiente e na pasta raiz do projeto subir o servidor via CLI através do comando:
+```
+php spark serve
+```
+
     
 Por fim, para iniciarmos execute os comandos em ordem:
 ```
